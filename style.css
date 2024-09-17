@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height:2048px;
+    width: 768px;
+}
+
+main {background-image: url("/W.png");
+background-size:cover;
+height: 1024px;
+width: 768px;
+font-family: Arial, sans-serif;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0); /* Transparent background */
+    z-index: 1000;
+}
+
+.nav-left h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px; 
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #FFB703;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #035a7e; 
+}
+
+.search {
+    display: flex;
+    margin-left: 660px;
+    height: 500px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px;
+}
+
+.search > div:first-child { /* Selects the first item (adjust this selector as needed) */
+    flex-basis: 100%; /* Forces the first item to take up the full width */
+}
+
+.search > form { /* This can be any selector targeting your form */
+    flex-basis: 100%; /* Makes the form take up the full width */
+}
+
+#info{
+    height: 1024px;
+    width: 1260px;
+    background-color: #023047;
+}
+
